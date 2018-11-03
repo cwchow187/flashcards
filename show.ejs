@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+
+<ul>
+	<% for (var i=0; i< film_actors.length; i++) { %>
+		<li>
+			<span><%= film_actors[i].name %></span>
+			<span class="hide"><%= film_actors[i].specialization %></span>
+		</li>
+	<% } %>
+</ul>
+
+</body>
+</html>

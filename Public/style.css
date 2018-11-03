@@ -1,0 +1,29 @@
+#backcontainer {
+    width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 25px;
+    text-align: center;
+    margin: auto;
+
+}
+
+#container {
+	width: 300px;
+    height: 100px;
+    padding: 15px;
+    background-color: #e6e6e6;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 25px;
+    margin: auto;
+    text-align: center;
+}
+#movie {
+	margin: auto;
+}
+#showAnswer {
+	margin: auto;
+	cursor: pointer;
+}

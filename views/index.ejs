@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.hide {
+			display: none;
+		}
+		li{
+			list-style-type: none;
+		}
+		#listofmovies{
+			width: 900px;
+			margin:auto;
+			text-align: center;
+			padding-top: 75px;
+			font-size: 30px;
+			border-style: dotted;
+			border-radius: 5px;
+			padding-bottom: 75px;
+		}
+		body{
+			background-image: url("https://s.newsweek.com/sites/www.newsweek.com/files/styles/lg/public/2016/10/26/trump-star.PNG");
+			background-repeat: no-repeat;
+			background-size: 100% ;
+			 
+		}
+
+		
+	</style>
+</head>
+<body>
+<div id='listofmovies'>
+	<ul>
+		<% for (var i=0; i< questions.length; i++) { %>
+			<li>
+				<span class="question"><%= questions[i].film %></span>
+				<span class="hide"><%= questions[i].actors_1 %> | <%= questions[i].actors_2 %> | <%= questions[i].actors_3 %></span>
+			</li>
+			<% } %>
+	</ul>
+</div>
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+	$('.question').on('click', function(){
+		$(this).siblings().eq(0).removeClass('hide');
+	});
+	$('.actors').on('click'), function(){
+		$(this).siblings().eq(0).removeClass('hide');
+	}
+</script>
+</body>
+</html>
